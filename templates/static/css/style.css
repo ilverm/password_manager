@@ -1,0 +1,210 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.navbar-expand-lg {
+    background-color: white !important;
+    box-shadow: 0px 0px 4px 0.5px rgb(153,153,153);
+}
+
+.generator-form {
+    height: 15rem;
+    background-color: white;
+    color: black;
+    padding-left: 1.50rem;
+    padding-right: 1.50rem;
+    width: 56.25rem !important; 
+    margin-left: 11.625rem !important;
+    margin-right: 11.625rem !important;
+    box-shadow: 0px 0px 4px 0.5px rgb(153,153,153);
+}
+
+.generator-container {
+    background-color: transparent !important;
+    margin-bottom: 6.875rem !important;
+}
+
+.center-text {
+    font-size: 3.125rem;
+    margin-top: 0px;
+}
+
+.password-output {
+    width: 45.1rem;
+    height: 2.50rem;
+    margin-bottom: 10px;
+    outline-color: #51627a !important;
+}
+
+.try-section {
+    background-color: #051c3b !important;
+    height: 29rem;
+}
+
+.submit-button {
+    height: 2.5rem;
+    background-color: #051c3b;
+    border-color: #051c3b;
+    border-bottom: #051c3b;
+    border-right: #051c3b;
+    border-radius: 2px;
+    color: white;
+}
+
+.text-container {
+    background-color: transparent !important;
+    width: 42.5rem !important;
+    margin-top: -20.25rem !important;
+    margin-bottom: 3rem !important;
+    color: white !important;
+}
+
+.length-input {
+    outline-color: #51627a !important;
+}
+
+.user-dropdown:active {
+    border-color: white !important;
+}
+
+.user-dropdown:focus {
+    border-color: white !important;
+}
+
+.user-dropdown {
+    border-color: white !important;
+}
+
+.passwords-container {
+    margin-top: 13.4375rem !important;
+    width: 56.25rem !important;
+    background-color: grey !important;
+}
+
+.account-generator-form {
+    min-height: 15rem;
+    background-color: white;
+    color: black;
+    padding-left: 1.50rem;
+    padding-right: 1.50rem;
+    padding-bottom: 1.875rem;
+    width: 56.25rem !important; 
+    margin-left: 11.625rem !important;
+    margin-right: 11.625rem !important;
+    box-shadow: 0px 0px 4px 0.5px rgb(153,153,153);
+}
+
+.account-generator-container {
+    background-color: transparent !important;
+    margin-bottom: 6.875rem !important;
+}
+
+.element-container {
+    height: 50px !important;
+    transition: background-color .5s;
+    margin-left: 0px !important;
+    margin-right: 0px !important; 
+}
+
+.element-container:hover {
+    background-color: #e6e8eb !important;
+}
+
+.submit-account-button {
+    background-color: #051c3b;
+    border-color: #051c3b;
+    border-bottom: #051c3b;
+    border-right: #051c3b;
+    border-radius: 2px;
+    color: white;
+}
+
+/* type_masterpassword.html */
+
+.enter-pwd-container {
+    margin-top: -21.5rem !important;
+    background-color: transparent !important;
+    height: 450px !important;
+    width: 430px !important;
+    box-shadow: 0px 0px 1px 0.5px rgb(0,0,0);
+}
+
+.new-try-section {
+    background-color: transparent !important;
+    height: 27rem;
+}
+
+.enter-password {
+    height: 35px !important;
+    width: 406px !important;
+}
+
+.enter-password:focus {
+    border-color: black !important;
+    box-shadow: 0px 0px 1px 0.5px rgb(5,28,59) !important;
+}
+
+.enter-button {
+    background-color: #051c3b;
+    border-color: #051c3b;
+    border-bottom: #051c3b;
+    border-right: #051c3b;
+    border-radius: 2px;
+    color: white;
+    margin-top: 160px; 
+    margin-left: 348px; 
+    height: 35px;
+}
+
+.main-alert {
+    margin-bottom: -58px !important;
+}
+
+/* masterpassword.html */
+
+.create-pwd-container {
+    margin-top: -21.5rem !important;
+    background-color: transparent !important;
+    height: 450px !important;
+    width: 430px !important;
+    box-shadow: 0px 0px 1px 0.5px rgb(0,0,0);
+}
+
+.create-button {
+    background-color: #051c3b;
+    border-color: #051c3b;
+    border-bottom: #051c3b;
+    border-right: #051c3b;
+    border-radius: 2px;
+    color: white;
+    margin-top: 120px; 
+    margin-left: 214px; 
+    height: 35px;
+}
+
+.create-alert {
+    margin-bottom: -58px !important;
+}
+
+.password-check1 {
+    width: 406px !important; 
+    height: 35px;
+}
+
+.password-check1:focus {
+    border-color: black !important;
+    box-shadow: 0px 0px 1px 0.5px rgb(5,28,59) !important;
+}
+
+.password-check2 {
+    width: 406px !important; 
+    height: 35px; 
+    margin-top: 5px;
+}
+
+.password-check2:focus {
+    border-color: black !important;
+    box-shadow: 0px 0px 1px 0.5px rgb(5,28,59) !important;
+    
+}

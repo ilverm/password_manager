@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<section class="try-section"></section>
+<div class="container text-container">
+    <div class="container center">
+        <p class="text-center" style="font-size: 2.5rem;">Passwords</p>
+        <p style="font-size: 1rem; margin-left: 11rem;">All your passwords, safe in one place</p>
+    </div>
+</div>
+<div class="container-lg account-generator-container">
+    <div class="container-lg center">
+        <div class="account-generator-form rounded" style="padding-top: 1.875rem !important;">
+            <div class="container-lg">
+                <p class="text-center">Compile the form to save a new password or enter the main password to see your passwords</p>
+                <form method="post" action="{% url 'account' %}" style="padding-bottom: .875rem !important;">
+                    {% csrf_token %}
+                    <div class="d-inline-flex">
+                        <input id="add_website" class="null add_website" type="text" name="add_website" placeholder="Enter a website" style="width: 10.35rem !important; height: 2.0625rem !important;">
+                        <input id="add_username" class="null add_username" type="text" name="add_username" placeholder="Enter a username" style="width: 10.35rem !important;">
+                        <input id="add_password" class="null add_password" type="password" name="add_password" placeholder="Enter a password" style="width: 10.35rem !important;">
+                        <input id="add_main_password" class="null add_main_password" type="password" name="add_mainpassword" placeholder="Enter main password" style="width: 10.35rem !important;" required>
+                        <input name="first_form" class="submit-account-button" type="submit" value="Submit" style="width: 10.35rem !important;">
+                    </div>
+                </form>
+                <hr>
+            </div>
+            <div class="container text-center" style="padding-top: .875rem !important;">
+                <div class="row align-items-center">
+                    <div class="col-4">
+                        <p class="fw-bold fs-4 text-center">Website</p>
+                    </div>
+                    <div class="col-4">
+                        <p class="fw-bold fs-4 text-center">Username</p>
+                    </div>
+                    <div class="col-4">
+                        <p class="fw-bold fs-4 text-center">Password</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container text-center">
+                {% for object in queryset %}
+                <div class="row align-items-center element-container">
+                    <div class="col-4" style="padding-left: 0rem !important;">
+                        <input id="website" class="null website-input text-center" type="text" name="website" value="{{ object.website }}" style="border: none !important; color: black !important; background-color: transparent !important;" disabled >
+                    </div>
+                    <div class="col-4">
+                        <input id="username" class="null password-input text-center" type="text" name="username" value="{{ object.username }}" style="border: none !important; color: black !important; background-color: transparent !important;" disabled>
+                    </div>
+                    <div class="col-4" style="padding-right: 0rem !important;">
+                        <input id="password" class="null password-input text-center" type="text" name="password" value="{{ object.password }}" style="border: none !important; color: black !important; background-color: transparent !important;" disabled>
+                    </div>
+                </div>
+                <hr style="margin-top: 0rem !important; margin-bottom: 0rem !important;">
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

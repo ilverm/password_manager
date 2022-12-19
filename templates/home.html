@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<section class="try-section"></section>
+<div class="container text-container">
+    <div class="container center">
+        <p class="text-center" style="font-size: 2.5rem;">Password Generator</p>
+        <p style="font-size: 1rem;">Include letters, numbers and special characters to generate a strong, secure password</p>
+    </div>
+</div>
+<div class="container-lg generator-container">
+    <div class="container-lg center">
+        <div class="generator-form rounded" style="padding-top: 1.875rem !important;">
+            <form method="post">
+                {% csrf_token %}
+                <p style="font-size: .875rem; margin-bottom: .3125rem;">Generated Password</p>
+                <div class="d-flex flex-password">
+                    <input id="password-box" class="null password-output" type="text" value="{{ data }}" readonly>
+                    <input class="submit-button" type="submit" value="Generate Password">
+                </div>
+                <hr class="line-break">
+                <p style="font-size: .875rem; margin-bottom: .125rem;">Length Selector</p>      
+                <div class="d-flex flex-row justify-content-between mb-3 align-items-center">
+                    <div class="d-inline-flex p-2">
+                        <input class="length-input" type="text" id="length" name="length" required min="8" max="64" size="10" style="margin-left: -.5rem !important;" placeholder="8-64">
+                    </div>
+                    <div class="p-2">
+                        <input type="checkbox" name="uppercaseletters" value="1" style="margin-right: .3125rem;" checked>Uppercase Letters
+                    </div>
+                    <div class="p-2">
+                        <input type="checkbox" name="lowercaseletters" value="1" style="margin-right: .3125rem;" checked>Lowercase Letters
+                    </div>
+                    <div class="p-2">
+                        <input type="checkbox" name="digits" value="1" style="margin-right: .3125rem;" checked>Digits
+                    </div>
+                    <div class="p-2">
+                        <input type="checkbox" name="symbols" value="1" style="margin-right: .3125rem;" checked>Special Characters
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="container-lg">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+          <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+        </a>
+        <span class="mb-3 mb-md-0 text-muted">&copy; 2022 PyGenerator</span>
+      </div>
+  
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+      </ul>
+    </footer>
+  </div>
+{% endblock content %}
