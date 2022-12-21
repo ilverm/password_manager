@@ -1,5 +1,5 @@
 html, body {
-    height: 100%;
+    height: 100vh;
     width: 100%;
 }
 
@@ -123,7 +123,7 @@ html, body {
 /* type_masterpassword.html */
 
 .enter-pwd-container {
-    margin-top: -21.5rem !important;
+    /* margin-top: -21.5rem !important; */
     background-color: transparent !important;
     height: 450px !important;
     width: 430px !important;
@@ -152,8 +152,8 @@ html, body {
     border-right: #051c3b;
     border-radius: 2px;
     color: white;
-    margin-top: 160px; 
-    margin-left: 348px; 
+    /* margin-top: 160px; 
+    margin-left: 348px;  */
     height: 35px;
 }
 
@@ -164,7 +164,6 @@ html, body {
 /* masterpassword.html */
 
 .create-pwd-container {
-    margin-top: -21.5rem !important;
     background-color: transparent !important;
     height: 450px !important;
     width: 430px !important;
@@ -177,9 +176,7 @@ html, body {
     border-bottom: #051c3b;
     border-right: #051c3b;
     border-radius: 2px;
-    color: white;
-    margin-top: 120px; 
-    margin-left: 214px; 
+    color: white; 
     height: 35px;
 }
 
